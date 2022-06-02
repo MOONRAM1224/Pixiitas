@@ -1,0 +1,167 @@
+@charset "UTF-8";
+/*-------------------------------------------------------------- 
+
+# GALERÍA 1 MODAL 
+
+--------------------------------------------------------------*/
+#portfolio1 .portfolio-item {
+  max-width: 25rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#portfolio1 .portfolio-item .portfolio-link {
+  position: relative;
+  display: block;
+  margin: 0 auto;
+}
+
+#portfolio1 .portfolio-item .portfolio-link .portfolio-hover {
+  display: flex;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.438);
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity ease-in-out 0.25s;
+}
+
+#portfolio1 .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content {
+  font-size: 1.25rem;
+  color: white;
+}
+
+#portfolio1 .portfolio-item .portfolio-link:hover .portfolio-hover {
+  opacity: 1;
+}
+
+#portfolio1 .portfolio-item .portfolio-caption {
+  padding: 1.5rem;
+  text-align: center;
+  background-color: white;
+}
+
+#portfolio1 .portfolio-item .portfolio-caption .portfolio-caption-heading {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 0;
+}
+
+/*-------------------------------------------------------------- 
+
+# ESTILOS DEL MODAL 
+
+--------------------------------------------------------------*/
+.modal-content {
+  background-color: rgba(0, 0, 0, 0.623);
+  border: none;
+  border-radius: 0;
+  color: white;
+}
+.modal-content a {
+  color: white;
+}
+
+.modal-header {
+  border-bottom: none;
+}
+
+/*-------------------------------------------------------------- 
+
+# Estilos Scroll 
+
+--------------------------------------------------------------*/
+body::-webkit-scrollbar {
+  width: 10px;
+  background: #BBBBBB;
+}
+
+body::-webkit-scrollbar-thumb {
+  /*background: white, 0.2;*/
+  border-radius: 10px;
+  border-right: 10px solid #002A7E;
+}
+
+body {
+  overflow-x: hidden;
+  font-family: "Segoe UI";
+}
+
+.bg-barra {
+  background-color: #BBBBBB;
+}
+
+.bg-barra2 {
+  background-color: #002A7E;
+}
+
+.pad-y {
+  padding-top: 10%;
+}
+
+.pad-top {
+  padding-top: 8%;
+}
+
+.boton {
+  color: black;
+  padding: 10px 30px;
+  border-radius: 20px;
+  text-decoration: none;
+  border: 1px solid black;
+}
+
+a {
+  text-decoration: none;
+  color: #002A7E;
+}
+
+.texto {
+  position: absolute;
+  top: 50%;
+  left: 90%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.contenedor {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+}
+
+.contenedor1 {
+  padding-top: 20%;
+  text-align: center;
+  text-justify: auto;
+  padding-left: 15%;
+  padding-right: 15%;
+  padding-bottom: 20%;
+}
+
+.contenedor2 {
+  padding-top: 20%;
+  padding-bottom: 20%;
+  padding-left: 15%;
+  padding-right: 15%;
+  text-align: center;
+  text-justify: auto;
+  background-color: #BBBBBB;
+}
+
+.contenedor25 {
+  padding-top: 20%;
+  padding-bottom: 20%;
+  padding-left: 15%;
+  padding-right: 15%;
+  text-align: center;
+  text-justify: auto;
+  color: #EEEEEE;
+  background-color: #002A7E;
+}
+
+.bg-container {
+  background-color: #EEEEEE;
+}
